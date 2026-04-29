@@ -1,34 +1,3 @@
-ozon-ai-system/
-│
-├── app.py                  # Web入口（Flask）
-├── config.py               # 配置
-├── requirements.txt
-│
-├── core/
-│   ├── llm.py              # LLM封装
-│   ├── orchestrator.py     # Agent调度器（核心）
-│
-├── agents/
-│   ├── base.py             # Agent基类
-│   ├── product_agent.py    # 选品
-│   ├── listing_agent.py    # Listing
-│   ├── ads_agent.py        # 广告策略
-│   ├── analytics_agent.py  # 数据分析
-│
-├── services/
-│   ├── ozon_client.py      # 未来对接Ozon API
-│   ├── data_service.py     # 数据层
-│
-├── workflows/
-│   ├── pipeline.py         # 工作流定义
-│
-├── templates/
-│   └── index.html
-│
-└── static/
-    └── style.css
-    # core/llm.py
-
 class LLM:
     def __init__(self, model="gpt-4o-mini"):
         self.model = model
